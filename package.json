@@ -1,0 +1,29 @@
+{
+  "name": "aulaqualidadetestes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mocha tests/example.js || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusMRosa/AulaQualidadeTestes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusMRosa/AulaQualidadeTestes/issues"
+  },
+  "homepage": "https://github.com/MatheusMRosa/AulaQualidadeTestes#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "underscore": "^1.9.0",
+    "wd": "^1.6.2",
+    "q": "latest"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
+}

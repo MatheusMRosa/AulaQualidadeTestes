@@ -1,0 +1,16 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 4723
+  },
+  "selectCaps": 0,
+  "caps":
+[
+  {
+    "browserName": "Chrome",
+    "appium-version": "1.7.2",
+    "platformName": "Chrome",
+    "app": ""
+  }
+]
+}
