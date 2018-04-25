@@ -1,0 +1,20 @@
+{
+  "appFile": {
+    "Android":"./app_files/app-debug.apk"
+  },
+  "server": {
+    "host": "localhost",
+    "port": 4723
+  },
+  "selectCaps": 0,
+  "caps":
+[
+  {
+    "appium-version": "1.7.2",
+    "platformName": "Android",
+    "platformVersion": "4.4.2",
+    "deviceName": "Android",
+    "app": ""
+  }
+]
+}
