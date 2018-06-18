@@ -4,14 +4,14 @@
 const config = require('./app_files.json');
 const resolve = require('path').resolve;
 
-let exports = {
+let _exports = {
     currentPlatform: undefined,
     caps: [],
     isAndroid: function () {
-        return exports.currentPlatform.platformName === 'Android';
+        return _exports.currentPlatform.platformName === 'Android';
     },
     isiOS: function () {
-        return exports.currentPlatform.platformName === 'iOS';
+        return _exports.currentPlatform.platformName === 'iOS';
     },
     configure: function (driver) {
         // See whats going on
@@ -29,11 +29,11 @@ let exports = {
     },
     createCaps: function (selectCaps) {
         selectCaps = selectCaps || config.selectCaps;
-        exports.caps = config.caps;
-        exports.currentPlatform = exports.caps[Math.min(selectCaps, exports.caps.length-1)];
-        exports.currentPlatform.app = resolve(config.appFile[exports.currentPlatform.platformName]);
-        console.log("Selected",exports.caps,  exports.currentPlatform);
+        _exports.caps = config.caps;
+        _exports.currentPlatform = _exports.caps[Math.min(selectCaps, _exports.caps.length-1)];
+        _exports.currentPlatform.app = resolve(config.appFile[_exports.currentPlatform.platformName]);
+        console.log("Selected",_exports.caps,  _exports.currentPlatform);
     }
 
 };
-module.exports = exports;
+module.exports = _exports;
